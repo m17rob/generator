@@ -1,0 +1,62 @@
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  padding: 10rem;
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+@font-face {
+  font-family: museomoderno;
+  src: url(/fonts/MuseoModerno-Regular.ttf) format("opentype"); }
+
+#finisher-canvas {
+  height: 100%;
+  width: 100%; }
+
+.leagueSelection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .leagueSelection__tag {
+    background: rgba(43, 52, 103, 0.3);
+    padding: .3rem 1.2rem;
+    border-radius: 100px;
+    margin-bottom: 1rem; }
+    .leagueSelection__tag h3 {
+      font-family: museomoderno, 'sans-serif';
+      color: #FCFFE7; }
+  .leagueSelection__selector select {
+    border: none;
+    outline: none;
+    background: #FCFFE7;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-size: 1.8rem;
+    color: #00235B;
+    cursor: pointer; }
+    .leagueSelection__selector select option {
+      border: none;
+      outline: none;
+      background-color: #FCFFE7;
+      color: #1a0a0a;
+      cursor: pointer;
+      text-align: center;
+      font-size: 2rem; }
+
+#subDropdown1,
+#subDropdown2,
+#submitButton {
+  display: none; }
